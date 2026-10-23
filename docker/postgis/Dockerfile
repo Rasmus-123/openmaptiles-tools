@@ -1,4 +1,4 @@
-ARG BASE_POSTGIS_VER=14-3.3
+ARG BASE_POSTGIS_VER=14-3.6
 FROM postgis/postgis:$BASE_POSTGIS_VER
 
 LABEL maintainer="Yuri Astrakhan <YuriAstrakhan@gmail.com>"
@@ -34,8 +34,8 @@ RUN set -eux  ;\
         postgresql-server-dev-$PG_MAJOR \
         libkakasi2-dev \
         libgdal-dev \
-        clang-11 \
-        llvm-11 \
+        clang-19 \
+        llvm-19 \
     ;\
     ## Install specific GEOS version
     #cd /opt/  ;\
